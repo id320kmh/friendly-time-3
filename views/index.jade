@@ -1,0 +1,77 @@
+extends layout
+block content
+    #container
+        h1 events
+    template#hello-screen-template
+        div(style='padding:25px 20% 0 20%; color: #000')
+            h1#title Friendly Time App
+        #logo
+        .buttonContainer
+            button#buttonEvents.btn.btn-primary.btn-md(type='button', value='xxxxxxxxxxx')
+                | Текущие мероприятия:
+                span= ' ' + eventsLength
+        .buttonContainer
+            button#buttonAdd.btn.btn-primary.btn-md(type='button') Создать мероприятие
+    // end hello-screen-template
+
+
+    template#addEvent-screen-template
+        #addNewEvent-container
+            .form-group.row
+                label.col-2.col-form-label(for='example-partyName-input') Название мероприятия:
+                .col-10
+                    input#example-partyName-input.form-control(type='text', value='friendly party')
+            .form-group.row
+                label.col-2.col-form-label(for='example-nameBos-input') Ваше имя:
+                .col-10
+                    input#example-nameBos-input.form-control(type='text', value='какой-то парень')
+            .form-group.row
+                label.col-2.col-form-label(for='example-place-input') Предполагаемое место:
+                .col-10
+                    input#example-place-input.form-control(type='text', value='рыгаловка тры дубка')
+            .form-group.row
+                label.col-2.col-form-label Дата/Время:
+                #datetimepicker2.input-group.date
+                    input#example-datetime-input.form-control(type='text')
+                    span.input-group-addon
+                        span.glyphicon.glyphicon-calendar
+            .form-group.row(style='margin-top:40px;')
+                .buttonContainer
+                    button#createEventButton.btn.btn-primary.btn-md(type='button') СОЗДАТЬ
+            .form-group.row(style='margin-top:30px;')
+                .buttonContainer(style='border:1px solid yellow')
+                    button#hrenVamButton.btn.btn-primary.btn-md(type='button') ХРЕН ВАМ А НЕ ВСТРЕЧА
+    // end addEvent-screen-template
+
+
+
+    template#showEvents-screen-template
+        #eventsContainer
+            #eventsInnerContainer
+                table.table
+                    thead
+                        tr
+                            th Мероприятие
+                            th Инициатор
+                            th Место
+                            th Дата/Время
+                            th Участники
+                            th Принять участие
+                    tbody#eventsList
+            #backButton
+            #myModal.modal.fade
+                .modal-dialog
+                    .modal-content
+                        .modal-header(style='border-bottom: none !important;')
+                            button.close(type='button', data-dismiss='modal') ×
+                            h4.modal-title Укажите свое имя
+                        .col-10.modal-body
+                            input#example-newMember-input.form-control(type='text', value='какой-то парень')
+                        .modal-footer(style='border-top: none !important;')
+                            button.btn(data-dismiss='modal', aria-hidden='true') Все-таки хрена
+                            button#willButtonSave.btn.btn-primary(data-dismiss='modal') Точно буду!!!
+    // end showEvents-screen-template
+
+
+
+
