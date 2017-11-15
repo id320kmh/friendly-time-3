@@ -228,8 +228,18 @@ html, body {
         margin:20px auto;
     }
 
-
 }
+
+@media only screen and (max-width : 1200px) {
+    #eventsInnerContainer {
+        width: 100%;
+    }
+}
+
+
+/*@media only screen and (max-device-width : 1200px) and (orientation : portrait) {*/
+
+/*}*/
 
 
 
