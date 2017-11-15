@@ -1,6 +1,31 @@
-extends layout
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title Page Not Found
+    link(href='css/error.css', rel='stylesheet')
+    script(src='https://code.jquery.com/jquery-3.2.1.min.js')
+    script(src='libs/textFit.min.js')
+  body
+    #container
+      h1#errorTitle Page Not Found
+      .error-img
+        img(src='img/error.png', alt='stud da sram!')
+    script.
+        (function () {
+            function doTextFit(el) {
+                textFit(
+                    $(el)[0], {
+                        alignHoriz: true,
+                        alignVert: false,
+                        widthOnly: true,
+                        reProcess: true,
+                        maxFontSize: 140
+                    }
+                );
+            }
 
-block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+            doTextFit('#errorTitle');
+        })();

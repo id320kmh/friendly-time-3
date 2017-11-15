@@ -7,8 +7,8 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var events = require('./routes/events');
-/*var answer = require('./routes/answer');*/
-// var pratsya = require('./routes/pratsya');
+
+var pratsya = require('./routes/pratsya');
 
 var app = express();
 
@@ -25,7 +25,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-// app.use('/pratsya', pratsya);
+app.use('/pratsya', pratsya);
 
 app.use('/api/events', events);
 

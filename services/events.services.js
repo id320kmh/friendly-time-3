@@ -15,18 +15,13 @@ function eventsServices(req, res) {
             db.get('events')
                 .push(req.body)
                 .write();
-
-            console.log(db.get('events').value());
-
         },
 
         addNewMember() {
-
                 db.get('events')
                     .find({ idEvent: req.body.eventId })
                     .assign({ members: req.body.newMembers })
                     .write()
-
         },
 
         clearAllEvents() {

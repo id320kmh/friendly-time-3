@@ -14,4 +14,19 @@ router.post('/createEvent', function(req, res) {
     res.end(eventsLength);
 });
 
+router.post('/addNewMember', function(req, res) {
+    eventsServices(req, res).addNewMember();
+    res.end();
+});
+
+router.post('/clearAllEvents', function(req, res) {
+    eventsServices(req, res).clearAllEvents();
+    res.end();
+});
+
+router.post('/clearOneEvent', function(req, res) {
+    eventsServices(req, res).clearOneEvent();
+    res.end();
+});
+
 module.exports = router;

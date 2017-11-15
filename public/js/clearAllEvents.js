@@ -5,7 +5,7 @@ $( document ).ready(function() {
         $(document).on('click', '#clearEvents', function(){
             $.ajax({
                 type: "POST",
-                url: "/clearAllEvents",
+                url: "/api/events/clearAllEvents",
                 success: function(data){
                     console.log('Clear!!!');
                     //location.href = '/';
@@ -16,7 +16,7 @@ $( document ).ready(function() {
         $(document).on('click', '#clearOneEvent', function(){
             $.ajax({
                 type: "POST",
-                url: "/clearOneEvent",
+                url: "/api/events/clearOneEvent",
                 success: function(data){
                     console.log('Clear One!!!');
                     // location.href = '/';

@@ -99,9 +99,9 @@ $( document ).ready(function() {
             App.events.forEach(function(item, index){
                 let eventContainer = '';
                 eventContainer += '<tr id='+ item.idEvent +'>';
-                eventContainer += '<td>' + item.eventName + '</td>';
+                eventContainer += '<td class="eventName">' + item.eventName + '</td>';
                 eventContainer += '<td>' + item.nameBos + '</td>';
-                eventContainer += '<td>' + item.eventPlace + '</td>';
+                eventContainer += '<td class="eventPlace">' + item.eventPlace + '</td>';
                 eventContainer += '<td class="datetime">' + item.eventDateTime + '</td>';
                 eventContainer += '<td class="members">' + item.members + '</td>';
                 eventContainer += '<td><button type="button" class="btn btn-primary btn-md willButton" data-toggle="modal" data-target="#myModal">Буду!</button></td>';
@@ -161,7 +161,7 @@ $( document ).ready(function() {
 
                 $.ajax({
                     type: "POST",
-                    url: "/addNewMember",
+                    url: "/api/events/addNewMember",
                     data: {
                         newMembers: members,
                         eventId: App.selectedEvent.selectId
