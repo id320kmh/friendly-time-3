@@ -1,68 +1,20 @@
 {
   "events": [
     {
-      "idEvent": "keTR7GF1pE",
-      "eventName": "friendly party",
-      "nameBos": "какой-то парень",
-      "eventPlace": "рыгаловка тры дубка",
-      "eventDateTime": "когда-нибудь",
-      "members": "какой-то парень"
+      "idEvent": "ilEAQOhfTx",
+      "eventName": "Новый год 2018",
+      "nameBos": "Праця",
+      "eventPlace": "центральная елка",
+      "eventDateTime": "31/12/2017 11:55 PM",
+      "members": "Праця"
     },
     {
-      "idEvent": "3595HDVelI",
-      "eventName": "friendly party",
-      "nameBos": "какой-то парень",
-      "eventPlace": "рыгаловка тры дубка",
-      "eventDateTime": "когда-нибудь",
-      "members": "какой-то парень"
-    },
-    {
-      "idEvent": "7Z4Pk4uNiO",
-      "eventName": "friendly party",
-      "nameBos": "какой-то парень",
-      "eventPlace": "рыгаловка тры дубка",
-      "eventDateTime": "когда-нибудь",
-      "members": "какой-то парень"
-    },
-    {
-      "idEvent": "6daOKAAb6D",
-      "eventName": "friendly party",
-      "nameBos": "какой-то парень",
-      "eventPlace": "рыгаловка тры дубка",
-      "eventDateTime": "когда-нибудь",
-      "members": "какой-то парень, kindrat"
-    },
-    {
-      "idEvent": "nAKZD16W2w",
-      "eventName": "erttet",
-      "nameBos": "какой-то парень",
-      "eventPlace": "рыгаловка тры дубка",
-      "eventDateTime": "18/11/2017 2:32 PM",
-      "members": "какой-то парень, vanya"
-    },
-    {
-      "idEvent": "pR0vJ7gCZR",
-      "eventName": "gym",
-      "nameBos": "sanya",
-      "eventPlace": "olimp gym",
-      "eventDateTime": "30/11/2017 2:49 PM",
-      "members": "sanya, rtyrtyrt, rturtutyutyutyu, yuiyuiyuiyu, piopiopiopiop, i786i78i768i768i678i"
-    },
-    {
-      "idEvent": "XQZa2Nf5yy",
-      "eventName": "tertw rt wert ewt ewrterwtre wt ert er twer t rewt",
-      "nameBos": "какой-то парень",
-      "eventPlace": "yiuituy i it yui ytui ytiuy iyut iuyt iyu titu yu iyut iuytiyu ti",
-      "eventDateTime": "когда-нибудь",
-      "members": "какой-то парень"
-    },
-    {
-      "idEvent": "k1fs3WMPbO",
-      "eventName": "friendly party",
-      "nameBos": "tretertertertertertertert",
-      "eventPlace": "рыгаловка тры дубка",
-      "eventDateTime": "когда-нибудь",
-      "members": "tretertertertertertertert"
+      "idEvent": "N14OMAyM6R",
+      "eventName": "Восхитительная четверка(5-ка?!)\t",
+      "nameBos": "Праця",
+      "eventPlace": "Карпатские горы\t",
+      "eventDateTime": "20/06/2018 10:00 AM",
+      "members": "Праця"
     }
   ]
 }
