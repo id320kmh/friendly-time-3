@@ -231,19 +231,35 @@ html, body {
 }
 
 @media only screen and (max-width : 1200px) {
+
+    #addNewEvent-container {
+        height:100%;
+        min-height:600px;
+        /*min-height: 600px;*/
+        padding:10px 0 0 0;
+        margin:0 auto;
+        overflow: hidden;
+    }
+
+        #addNewEvent-container .form-group{
+            margin:20px auto;
+        }
+
+
     #eventsContainer {
         padding-top: 10px;
     }
 
-    #eventsInnerContainer {
-        width: 100%;
-    }
+        #eventsInnerContainer {
+            width: 100%;
+            min-height: 300px;
+        }
+
+        #backButton {
+            margin-top: 10px;
+        }
 }
 
-
-/*@media only screen and (max-device-width : 1200px) and (orientation : portrait) {*/
-
-/*}*/
 
 
 
