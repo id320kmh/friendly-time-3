@@ -208,7 +208,7 @@ html, body {
 
         #eventsInnerContainer {
             width: 100%;
-            min-width:400px;
+            min-width:350px;
         }
 
     /*----- show events table --------*/
@@ -241,26 +241,39 @@ html, body {
         overflow: hidden;
     }
 
-        #addNewEvent-container .form-group{
-            margin:20px auto;
-        }
+    #addNewEvent-container .form-group{
+        margin:20px auto;
+    }
 
 
     #eventsContainer {
         padding-top: 10px;
     }
 
-        #eventsInnerContainer {
-            width: 100%;
-            min-height: 300px;
-        }
+    #eventsInnerContainer {
+        width: 100%;
+        min-height: 300px;
+    }
 
-        #backButton {
-            margin-top: 10px;
-        }
+    #backButton {
+        margin-top: 10px;
+    }
 }
 
 
 
+/*@media screen and (max-device-width:480px){
+    @media only screen and (orientation: portrait){
+
+    }
+}
+
+@media screen and (min-device-width:481px){}
+
+@media screen and (min-width:769px){}
+
+@media only screen and (orientation: portrait){}
+
+@media only screen and (orientation: landscape){}*/
 
 
