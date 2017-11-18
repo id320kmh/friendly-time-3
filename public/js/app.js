@@ -77,6 +77,9 @@ $( document ).ready(function() {
             App.$doc.on('click', '#hrenVamButton', TemplateEvents.showInitScreen);
 
             App.$doc.on('click', '#backButton', TemplateEvents.showInitScreen);
+
+            window.addEventListener('resize', App.titleResize);
+            //window.addEventListener("orientationchange", App.titleResize, false);
         },
 
         getEvents() {
@@ -185,6 +188,10 @@ $( document ).ready(function() {
                 str += chars[Math.floor(Math.random() * chars.length)];
             }
             return str;
+        },
+
+        titleResize() {
+            App.doTextFit('#title');
         },
 
         doTextFit: function(el) {
