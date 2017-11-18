@@ -78,7 +78,7 @@ $( document ).ready(function() {
 
             App.$doc.on('click', '#backButton', TemplateEvents.showInitScreen);
 
-            window.addEventListener('resize', App.titleResize);
+            // window.addEventListener('resize', App.titleResize);
             //window.addEventListener("orientationchange", App.titleResize, false);
         },
 
@@ -191,7 +191,7 @@ $( document ).ready(function() {
         },
 
         titleResize() {
-            App.doTextFit('#title');
+                App.doTextFit('#title');
         },
 
         doTextFit: function(el) {
